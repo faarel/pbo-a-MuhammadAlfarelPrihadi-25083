@@ -36,9 +36,10 @@ main java
 
 ## Screenshot Hasil Program (After)
 Hasil Java
-<img width="1161" height="898" alt="image" src="https://github.com/user-attachments/assets/8c8805e6-ce52-495a-a9cc-d592ef8fa779" />
+<img width="1128" height="923" alt="image" src="https://github.com/user-attachments/assets/d73c84c2-889c-4388-b72c-75575eb44ec2" />
 Hasil php
-<img width="1157" height="926" alt="image" src="https://github.com/user-attachments/assets/61c3dcd1-0344-4d9e-89b3-591045fe76c5" />
+<img width="1322" height="868" alt="image" src="https://github.com/user-attachments/assets/9d6b20a3-ef7e-46af-a12f-24b6b755d2f2" />
+
 
 
 
