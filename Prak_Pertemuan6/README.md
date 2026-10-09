@@ -1,18 +1,30 @@
-## Getting Started
+# Praktikum PBO — Pertemuan 6
+## Materi: Abstract Class, Interface, dan Enum
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Nama:** Muhammad Alfarel Prihadi  
+**NPM:** 4525210083  
+**Program Studi:** Teknik Informatika  
+**Universitas:** Universitas Pancasila  
 
-## Folder Structure
+## Tujuan Praktikum
+Memahami perbedaan abstract class dan interface serta menerapkan enum untuk mengelompokkan pilihan nilai yang sudah ditentukan.
 
-The workspace contains two folders by default, where:
+## Penjelasan Program
+Pada folder `java`, abstract class `Kendaraan` menyimpan data umum seperti merek dan tahun, serta mendefinisikan method yang harus disediakan oleh class turunannya. Class `Mobil` dan `Sepeda` mewarisi `Kendaraan`. Keduanya mengimplementasikan interface `Movable`, sedangkan `Mobil` juga mengimplementasikan `Fuelable` karena kendaraan ini menggunakan bahan bakar.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Interface `Movable` menetapkan perilaku untuk objek yang dapat bergerak. Interface `Fuelable` menetapkan operasi pengisian bahan bakar dan informasi kapasitas tangki. Enum `TipeBahanBakar` berisi jenis bahan bakar, label, biaya pengisian, dan informasi apakah jenis tersebut ramah lingkungan. File `Main.java` menjalankan contoh penggunaan class dan interface tersebut.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Folder `php` menyediakan implementasi konsep serupa menggunakan PHP, termasuk interface, enum, abstract class, dan trait.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Screenshot Kode (Before)
+Simpan screenshot kode program pada folder `screenshots` dengan nama `before.png`, lalu tampilkan di bawah ini.
 
-## Dependency Management
+![Screenshot kode sebelum dijalankan](screenshots/before.png)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Screenshot Hasil Program (After)
+Simpan screenshot hasil program dengan nama `after.png` di folder `screenshots`.
+
+![Screenshot hasil program](screenshots/after.png)
+
+## Kesimpulan
+Praktikum ini membantu saya memahami bahwa abstract class cocok untuk menampung data atau perilaku umum, sedangkan interface digunakan untuk menentukan kemampuan yang harus dimiliki suatu class. Enum membuat pilihan nilai lebih terkontrol, sehingga program lebih terstruktur dan mudah dipahami.
