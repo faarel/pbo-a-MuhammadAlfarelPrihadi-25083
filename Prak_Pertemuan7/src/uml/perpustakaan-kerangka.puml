@@ -1,0 +1,131 @@
+@startuml perpustakaan-class
+title Sistem Perpustakaan — Class Diagram (Sesi 7)
+
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+
+package model {
+
+  abstract class Koleksi {
+    - nomorInduk : String
+    - judul : String
+    - penulis : String
+    - tahun : int
+    - jumlahEksemplar : int
+    - status : StatusKoleksi
+    + {abstract} masaPinjamHari() : int
+    + {abstract} bolehDipinjam() : boolean
+    + tersedia() : boolean
+    + kurangiStok() : void
+    + tambahStok() : void
+  }
+
+  ' TODO 1: tiga turunan Koleksi, masing-masing dengan masa pinjam sendiri.
+  class Buku {
+    + masaPinjamHari() : int      ' 14 hari
+    + bolehDipinjam() : boolean   ' true
+    + tambahBab(nomor : int, judul : String) : void
+    + getBab() : List<Bab>
+  }
+
+  class Majalah {
+    - edisi : String
+    + masaPinjamHari() : int      ' 7 hari
+    + bolehDipinjam() : boolean   ' true
+  }
+
+  class Skripsi {
+    - pembimbing : String
+    + masaPinjamHari() : int      ' 0 (baca di tempat)
+    + bolehDipinjam() : boolean   ' false
+  }
+
+  class Bab {
+    - nomor : int
+    - judul : String
+  }
+
+  ' TODO 2: Anggota dan Peminjaman beserta atributnya.
+  class Anggota {
+    - nomorAnggota : String
+    - nama : String
+    - jenis : JenisKeanggotaan
+  }
+
+  class Peminjaman {
+    - tanggalPinjam : LocalDate
+    - tanggalJatuhTempo : LocalDate
+    - tanggalKembali : LocalDate
+  }
+
+  ' Pembanding agregasi yang ada di kode (Jurusan.java / Mahasiswa)
+  class Jurusan {
+    - kode : String
+    - nama : String
+    + daftarkan(m : Mahasiswa) : void
+    + keluarkan(m : Mahasiswa) : void
+    + getMahasiswa() : List<Mahasiswa>
+  }
+
+  class Mahasiswa {
+    - nim : String
+    - nama : String
+  }
+
+  ' TODO 3: enum.
+  enum StatusKoleksi {
+    TERSEDIA
+    DIPINJAM
+    HILANG
+  }
+
+  enum JenisKeanggotaan {
+    MAHASISWA
+    DOSEN
+    UMUM
+  }
+
+  ' ── RELASI ───────────────────────────────────────────────
+  ' TODO 4: derajat keterikatan + multiplicity di kedua ujung.
+  '
+  ' Buku *-- Bab : komposisi. Bab tidak bisa hidup tanpa Buku,
+  '   dan hanya Buku yang boleh membuatnya (constructor privat).
+  ' Anggota *-- Peminjaman : komposisi. Peminjaman tanpa peminjam tidak bermakna.
+  ' Peminjaman --> Koleksi : asosiasi. Koleksi hidup mandiri tanpa peminjaman.
+  ' Jurusan o-- Mahasiswa : agregasi. Mahasiswa tetap ada bila Jurusan dibubarkan.
+
+  Buku "1" *-- "0..*" Bab : memiliki >
+  Anggota "1" *-- "0..*" Peminjaman : melakukan >
+  Peminjaman "0..*" --> "1" Koleksi : meminjam >
+  Jurusan "1" o-- "0..*" Mahasiswa : menaungi >
+
+  ' TODO 5: yang SALAH tadi `Koleksi <|-- Bab` (Bab bukan sejenis Koleksi).
+  '         Pewarisan yang benar: Buku, Majalah, Skripsi adalah sejenis Koleksi.
+  Koleksi <|-- Buku
+  Koleksi <|-- Majalah
+  Koleksi <|-- Skripsi
+
+  ' Relasi ke enum
+  Koleksi --> "1" StatusKoleksi
+  Anggota --> "1" JenisKeanggotaan
+
+}
+
+package service {
+  class PerpustakaanService {
+    + tambahKoleksi(k : Koleksi) : void
+    + daftarkanAnggota(a : Anggota) : void
+    + pinjam(nomorAnggota : String, nomorInduk : String) : Peminjaman
+    + kembalikan(nomorAnggota : String, nomorInduk : String) : void
+    + cariKoleksi(nomorInduk : String) : Koleksi
+  }
+}
+
+' TODO 6: relasi lintas paket. Agregasi: layanan tidak membuat Koleksi/Anggota,
+'         objeknya datang dari luar lewat tambahKoleksi() dan daftarkanAnggota().
+'         Alasan lengkapnya ditulis di analisis.md.
+PerpustakaanService "1" o-- "0..*" Koleksi : mengelola >
+PerpustakaanService "1" o-- "0..*" Anggota : mengelola >
+PerpustakaanService ..> Peminjaman : membuat >
+
+@enduml
