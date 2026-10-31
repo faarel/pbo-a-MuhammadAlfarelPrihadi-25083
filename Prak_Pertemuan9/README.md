@@ -81,56 +81,22 @@ Prak_Pertemuan9/
 
 > Folder `docs/screenshots/` belum ada di project, silakan dibuat sendiri untuk menyimpan gambar.
 
-## 4. Screenshot Kode (Before)
 
-> Screenshot akan saya masukkan sendiri. Ganti placeholder dengan gambar masing-masing file.
 
-**Anggota.java**
-![Anggota.java](docs/screenshots/before/Anggota.png)
+## 5. Screenshot Hasil Program 
 
-**Buku.java**
-![Buku.java](docs/screenshots/before/Buku.png)
+ <img width="1190" height="887" alt="image" src="https://github.com/user-attachments/assets/65365aec-852c-4cdd-9f84-094b518be438" />
+<img width="1093" height="1027" alt="image" src="https://github.com/user-attachments/assets/026d2daf-8bdf-4f40-bc86-83ae9bb132c8" />
+<img width="1176" height="973" alt="image" src="https://github.com/user-attachments/assets/d72c7234-bbed-4fa0-8cfc-9b37ac536353" />
+<img width="1296" height="907" alt="image" src="https://github.com/user-attachments/assets/0f175ee7-096f-4cbe-8ea4-a79438042ecf" />
+<img width="1143" height="883" alt="image" src="https://github.com/user-attachments/assets/9be65d85-4e13-41a3-b640-ef2b1ed087d1" />
+<img width="1197" height="973" alt="image" src="https://github.com/user-attachments/assets/7e485abd-628e-455d-ac81-86b8b28b799d" />
 
-**Peminjaman.java**
-![Peminjaman.java](docs/screenshots/before/Peminjaman.png)
 
-**PerpustakaanService.java**
-![PerpustakaanService.java](docs/screenshots/before/PerpustakaanService.png)
 
-**Format.java**
-![Format.java](docs/screenshots/before/Format.png)
 
-**App.java**
-![App.java](docs/screenshots/before/App.png)
 
-## 5. Screenshot Hasil Program (After)
 
-> Screenshot hasil running akan saya masukkan sendiri.
-
-**Output program (Java)**
-![Output Java](docs/screenshots/after/output-java.png)
-
-## 6. Cara Menjalankan Program
-
-**Kebutuhan:** JDK versi **19 atau lebih baru**, karena kode memakai `Locale.of(...)` di `Format.java`.
-
-Di folder tidak ada `pom.xml`, jadi program dijalankan dengan `javac` dan `java` biasa. Buka terminal di folder `Prak_Pertemuan9`, lalu:
-
-**Linux / macOS / Git Bash**
-```bash
-mkdir -p bin
-javac -d bin $(find src -name "*.java")
-java -cp bin id.ac.univpancasila.perpustakaan.App
-```
-
-**Windows (PowerShell)**
-```powershell
-New-Item -ItemType Directory -Force bin
-javac -d bin (Get-ChildItem -Recurse src -Filter *.java).FullName
-java -cp bin id.ac.univpancasila.perpustakaan.App
-```
-
-**Lewat VS Code:** buka folder `Prak_Pertemuan9`, buka `App.java`, lalu klik **Run** di atas method `main`. Konfigurasi di `.vscode/settings.json` memakai `src` sebagai source path dan `bin` sebagai output.
 
 ## 7. Kesimpulan
 
