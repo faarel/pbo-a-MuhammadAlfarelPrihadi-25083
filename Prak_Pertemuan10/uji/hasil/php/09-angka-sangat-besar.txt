@@ -1,0 +1,24 @@
+=== SISTEM PERPUSTAKAAN ===
+Anggota terdaftar: A001, A002, A003 (batas pinjam 3 buku)
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): [MASUKAN] "99999999999" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+Pilih menu (0-5): ISBN: Judul: Jumlah eksemplar (1-1000): [MASUKAN] Angka harus antara 1 dan 1000 (negatif tidak diterima). Silakan ulangi.
+Jumlah eksemplar (1-1000): [MASUKAN] "99999999999" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+Jumlah eksemplar (1-1000): [OK] Buku "Buku Besar" ditambahkan. Sisa eksemplar: 10
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): Terima kasih. Program selesai.
+exit=0

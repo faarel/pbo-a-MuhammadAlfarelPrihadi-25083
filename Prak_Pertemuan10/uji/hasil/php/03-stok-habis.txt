@@ -1,0 +1,30 @@
+=== SISTEM PERPUSTAKAAN ===
+Anggota terdaftar: A001, A002, A003 (batas pinjam 3 buku)
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): ID anggota: ISBN buku: [OK] A001 berhasil meminjam "Basis Data". Sisa eksemplar: 0. Total pinjaman A001: 1
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): ID anggota: ISBN buku: [GAGAL] Buku "Basis Data" (ISBN 978-2) sedang dipinjam semua, stok habis. Coba buku lain atau tunggu ada yang mengembalikan.
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): Terima kasih. Program selesai.
+exit=0

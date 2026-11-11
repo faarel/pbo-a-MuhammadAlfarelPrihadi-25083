@@ -1,0 +1,5 @@
+DAFTAR BUKU PERPUSTAKAAN
+Diekspor: 2026-11-11 19:45:58
+No | ISBN | Judul | Sisa Eksemplar
+1 | 978-1 | Pemrograman Berorientasi Objek | 3
+2 | 978-2 | Basis Data | 1

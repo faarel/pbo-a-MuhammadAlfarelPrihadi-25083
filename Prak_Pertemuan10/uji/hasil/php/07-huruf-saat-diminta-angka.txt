@@ -1,0 +1,38 @@
+=== SISTEM PERPUSTAKAAN ===
+Anggota terdaftar: A001, A002, A003 (batas pinjam 3 buku)
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): [MASUKAN] "abc" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+Pilih menu (0-5): [MASUKAN] "1.5" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+Pilih menu (0-5): ISBN: Judul: Jumlah eksemplar (1-1000): [MASUKAN] "dua" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+Jumlah eksemplar (1-1000): [OK] Buku "Buku Baru" ditambahkan. Sisa eksemplar: 3
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): No | ISBN | Judul | Sisa Eksemplar
+1 | 978-1 | Pemrograman Berorientasi Objek | 3
+2 | 978-2 | Basis Data | 1
+3 | 978-3 | Algoritma dan Struktur Data | 5
+4 | 978-4 | Jaringan Komputer | 2
+5 | 978-5 | Buku Baru | 3
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): Terima kasih. Program selesai.
+exit=0

@@ -1,0 +1,23 @@
+=== SISTEM PERPUSTAKAAN ===
+Anggota terdaftar: A001, A002, A003 (batas pinjam 3 buku)
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): ID anggota: [MASUKAN] Masukan tidak boleh kosong atau hanya spasi. Silakan ulangi.
+ID anggota: [MASUKAN] Masukan tidak boleh kosong atau hanya spasi. Silakan ulangi.
+ID anggota: ISBN buku: [OK] A001 berhasil meminjam "Pemrograman Berorientasi Objek". Sisa eksemplar: 2. Total pinjaman A001: 1
+
+--- MENU ---
+1. Pinjam buku
+2. Tambah buku
+3. Lihat daftar buku
+4. Ekspor daftar buku ke berkas
+5. Uji ekspor gagal di tengah penulisan (simulasi)
+0. Keluar
+Pilih menu (0-5): Terima kasih. Program selesai.
+exit=0

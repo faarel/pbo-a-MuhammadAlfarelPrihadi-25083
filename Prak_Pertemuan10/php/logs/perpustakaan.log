@@ -1,0 +1,20 @@
+2026-11-11 19:45:57 | BukuTidakDitemukanException | isbn=978-9 | Buku dengan ISBN 978-9 tidak ditemukan
+2026-11-11 19:45:57 | AnggotaTidakDitemukanException | idAnggota=A999 | Anggota dengan ID A999 belum terdaftar
+2026-11-11 19:45:57 | BukuSedangDipinjamException | isbn=978-2, judul=Basis Data | Buku "Basis Data" (ISBN 978-2) sedang dipinjam semua, stok habis
+2026-11-11 19:45:58 | BatasPinjamTerlampauiException | idAnggota=A001, batas=3 | Anggota A001 sudah mencapai batas peminjaman maksimum (3 buku)
+2026-11-11 19:45:58 | MasukanKosong | masukan kosong/spasi | Masukan tidak boleh kosong atau hanya spasi. Silakan ulangi.
+2026-11-11 19:45:58 | MasukanKosong | masukan kosong/spasi | Masukan tidak boleh kosong atau hanya spasi. Silakan ulangi.
+2026-11-11 19:45:58 | MasukanKosong | masukan kosong/spasi | Masukan tidak boleh kosong atau hanya spasi. Silakan ulangi.
+2026-11-11 19:45:58 | MasukanBukanAngka | masukan=abc | "abc" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+2026-11-11 19:45:58 | MasukanBukanAngka | masukan=1.5 | "1.5" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+2026-11-11 19:45:58 | MasukanBukanAngka | masukan=dua | "dua" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+2026-11-11 19:45:58 | MasukanDiLuarRentang | masukan=-1 | Angka harus antara 0 dan 5 (negatif tidak diterima). Silakan ulangi.
+2026-11-11 19:45:58 | MasukanDiLuarRentang | masukan=-5 | Angka harus antara 1 dan 1000 (negatif tidak diterima). Silakan ulangi.
+2026-11-11 19:45:58 | MasukanDiLuarRentang | masukan=0 | Angka harus antara 1 dan 1000 (negatif tidak diterima). Silakan ulangi.
+2026-11-11 19:45:58 | MasukanBukanAngka | masukan=99999999999 | "99999999999" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+2026-11-11 19:45:58 | MasukanDiLuarRentang | masukan=5000 | Angka harus antara 1 dan 1000 (negatif tidak diterima). Silakan ulangi.
+2026-11-11 19:45:58 | MasukanBukanAngka | masukan=99999999999 | "99999999999" bukan bilangan bulat yang valid (huruf, desimal, atau terlalu besar). Silakan ulangi.
+2026-11-11 19:45:58 | RuntimeException | berkas/proses ekspor | Ekspor gagal (RuntimeException): Tidak dapat membuka berkas untuk ditulis: folder-tidak-ada/daftar.txt
+2026-11-11 19:45:58 | RuntimeException | berkas/proses ekspor | Ekspor gagal (RuntimeException): Simulasi kegagalan di tengah penulisan (setelah 2 baris buku)
+2026-11-11 19:45:58 | MasukanDiLuarRentang | masukan=99 | Angka harus antara 0 dan 5 (negatif tidak diterima). Silakan ulangi.
+2026-11-11 19:45:58 | MasukanDiLuarRentang | masukan=6 | Angka harus antara 0 dan 5 (negatif tidak diterima). Silakan ulangi.
