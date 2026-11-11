@@ -54,57 +54,7 @@ Prak_Pertemuan10_Alfarel/
   `2026-11-11 19:45:57 | BukuTidakDitemukanException | isbn=978-9 | Buku dengan ISBN 978-9 tidak ditemukan`.
   Kesalahan masukan (kosong, di luar rentang) juga dicatat dengan jenis `MasukanKosong`, `MasukanDiLuarRentang`, dan sebagainya.
 
-## Cara menjalankan
 
-Prasyarat: JDK 21, Maven, dan PHP 8.3 atau lebih baru. Buka folder `Prak_Pertemuan10_Alfarel` di VS Code.
-
-**Java** (dari folder `java/`):
-
-```bash
-mvn clean compile
-mvn exec:java -Dexec.mainClass=id.ac.univpancasila.perpustakaan.App
-```
-
-**PHP** (dari folder `php/`):
-
-```bash
-php app.php
-```
-
-**Menjalankan seluruh skenario uji** (Linux/macOS/Git Bash, setelah `mvn clean compile`):
-
-```bash
-cd uji
-./jalankan-uji.sh
-```
-
-Anggota yang terdaftar: `A001`, `A002`, `A003`. Batas pinjam 3 buku.
-
-## Contoh pengujian
-
-Pinjam ISBN yang tidak ada (`uji/hasil/java/01-isbn-tidak-terdaftar.txt`):
-
-```
-Pilih menu (0-5): ID anggota: ISBN buku: [GAGAL] Buku dengan ISBN 978-9 tidak ditemukan. Periksa ISBN pada menu 3 (Lihat daftar buku).
-```
-
-Ekspor gagal di tengah penulisan (Java):
-
-```
-[INFO] Berkas ditutup otomatis (try-with-resources): hasil-ekspor/simulasi-gagal.txt
-[GAGAL] Ekspor gagal (IOException): Simulasi kegagalan di tengah penulisan (setelah 2 baris buku)
-```
-
-Daftar lengkap 15 skenario beserta pesannya ada di [skenario-uji.md](skenario-uji.md). Hasil ekspor contoh:
-`java/hasil-ekspor/daftar-buku.txt` dan `php/hasil-ekspor/daftar-buku.txt`.
-
-## Catatan lingkungan
-
-- Dikompilasi dengan Java 21 (`maven.compiler.release=21`). Modul menyebut Java 25, tetapi tugas ini memakai JDK 21.
-- `pom.xml` tidak mengikat versi Maven tertentu. Di lingkungan pengerjaan, Maven Central tidak dapat diakses,
-  sehingga `mvn clean compile` belum dijalankan di sana; kode dikompilasi dengan `javac --release 21` (compiler yang sama)
-  dan seluruh skenario dijalankan dari `target/classes`. Jalankan `mvn clean compile` di komputer sendiri sebelum demo.
-- PHP diuji pada versi 8.3.6 (`public const int` memerlukan PHP 8.3 atau lebih baru).
 
 ## Kesimpulan
 
